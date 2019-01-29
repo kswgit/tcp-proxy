@@ -20,6 +20,7 @@ var server = tcpProxy.createServer({
     host: '127.0.0.1',
     port: 9000
   }
+  onldata: d => console.log(d.toString())
 });
 
 server.listen(8000);
